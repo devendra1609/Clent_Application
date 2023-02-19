@@ -1,0 +1,24 @@
+eureka:
+  client:
+    instance:
+      preferAddress: true
+    seriveurl:
+      defaultZone: http//localhost:8761/eureka
+server:
+  port: 8080
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3307/user_service
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        generate_statistics: true

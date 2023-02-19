@@ -1,0 +1,35 @@
+eureka:
+  client:
+    instance:
+      preferIpAddress: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9083
+spring:
+  mail:
+   host: smpt.gmail.com
+   port: 587
+   username: devendra@gmail.com
+   password: 9390875537
+   properties: 
+    mail: 
+     smtp:
+      auth: true
+      starttls: 
+       enable: true 
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3307/user_service
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+    
+      ddl-auto: update
+    properties:  
+      generate_statistics: true

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.akhm.vo&apos; to &apos;com.akhm.bo.vo&apos;&#x0D;&#x0A;- Original project: &apos;userService&apos;&#x0D;&#x0A;- Original element: &apos;userService/src/main/java/com.akhm.vo&apos;&#x0D;&#x0A;- Renamed element: &apos;userService/src/main/java/com.akhm.bo.vo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.akhm.vo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.akhm.vo" name="com.akhm.bo.vo" qualified="false" references="true" stamp="1675565173152" textual="false" version="1.0"/>
+</session>

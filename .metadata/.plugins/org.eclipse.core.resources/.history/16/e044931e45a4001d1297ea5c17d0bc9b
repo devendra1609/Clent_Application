@@ -1,0 +1,23 @@
+package com.akhm.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.akhm.exception.MyClientCustomException;
+import com.akhm.service.AdminService;
+import com.akhm.service.dto.AdminDTO;
+@Service
+public class AdminServiceImpl implements AdminService{
+	@Autowired
+	private RestTemplate restTemplate;
+	public AdminDTO getAdmin(String emailId, String password) {
+		try {
+			return restTemplate.postForObject("jdbc:mysql://localhost:3307/client_db", , responseType)
+		} catch (Exception e) {
+			throw new MyClientCustomException(e.getMessage());
+		}
+		
+	}
+
+}
